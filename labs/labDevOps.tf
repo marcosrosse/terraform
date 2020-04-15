@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
   shared_credentials_file = "~/secret"
-  profile = "meu-usuario-aws"
+  profile = "laboratoriodevops"
 }
 
 resource "aws_key_pair" "key_ssh" {
