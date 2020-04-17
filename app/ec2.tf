@@ -1,3 +1,13 @@
+data "aws_ami" "ubuntu" {
+  most_recent = true
+  
+  filter {
+    name = "name"
+    values = [""]
+}
+  owners = [""]
+}
+
 resource "aws_instance" "web" {
   count         =  var.hosts
   ami           = "ami-07ebfd5b3428b6f4d"
